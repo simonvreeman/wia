@@ -42,19 +42,9 @@
     </style>
     <script>
       window.ga=function(){ga.q.push(arguments)},ga.q=[],ga.l=+new Date;
-      ga("create","UA-2826482-25","auto"),ga("set","anonymizeIp",true),ga("set","displayFeaturesTask",null),ga("set","allowAdFeatures",false),ga("send","pageview");
+      ga("create","UA-2826482-25","auto"),ga("set","transport","beacon"),ga("set","anonymizeIp",true),ga("set","displayFeaturesTask",null),ga("set","allowAdFeatures",false),ga("send","pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    <script>
-    var trackOutboundLink = function(url) {
-      ga('send', 'event', 'outbound', 'click', url, {
-        'transport': 'beacon',
-        'hitCallback': function() {
-          document.location = url;
-        }
-      });
-    }
-    </script>
     <meta name="google-site-verification" content="buxekOJH2jXBqPX2A2oZfQfmN22nSznsDNMXmsZwQOY">
     <link rel="canonical" href="https://womeninanalytics.nl/">
     <meta name="description" content="Women in Analytics events in Amsterdam">
@@ -71,6 +61,6 @@
     <meta property="og:image:type" content="image/jpg">
   </head>
   <body>
-    <h1><span>Women in Analytics</span><a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="trackOutboundLink('https://www.meetup.com/Women-in-Analytics/'); return false;"><span>Events in Amsterdam</span></a></h1>
+    <h1><span>Women in Analytics</span><a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank"><span>Events in Amsterdam</span></a></h1>
   </body>
 </html>
