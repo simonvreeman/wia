@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <title>Women in Analytics</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
       body {
         display: -ms-grid;
         display: grid;
@@ -19,14 +15,18 @@
         color: rgba(0, 0, 0, .6);
       }
       img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
         max-width: 480px;
         height: auto;
       }
       h1 {
         font-size: calc(2rem + 1vw);
+        font-size: 2rem;
         font-weight: 400;
-        line-height: 1.4;
+        line-height: 1.6;
         text-align: center;
         text-rendering: geometricPrecision;
         -moz-osx-font-smoothing: grayscale;
@@ -62,13 +62,12 @@
     <meta property="og:image:type" content="image/jpg">
   </head>
   <body>
-    <a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'image', 'meetup', {transport: 'beacon', nonInteraction: true});">
-      <img src="women-in-analytics.jpg" alt="Women in Analytics" importance="high" loading="eager">
-    </a>
-    <h1>
-      <a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'link', 'meetup', {transport: 'beacon', nonInteraction: true});">Meetups in Amsterdam</a>
-      <br><br>
-      <a href="https://www.digitalanalyticscongres.nl/" title="Digital Analytics Congres in Utrecht" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'link', 'digitalanalyticscongres', {transport: 'beacon', nonInteraction: true});">Digital Analytics Congres in Utrecht</a>
-    </h1>
+  	<main>
+	    <a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'image', 'meetup', {transport: 'beacon', nonInteraction: true});">
+	      <img src="women-in-analytics.jpg" alt="Women in Analytics" importance="high" loading="eager">
+	    </a>
+	    <h1><a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'link', 'meetup', {transport: 'beacon', nonInteraction: true});">Meetups in Amsterdam</a></h1>
+	    <h1><a href="https://www.digitalanalyticscongres.nl/" title="Digital Analytics Congres in Utrecht" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'link', 'digitalanalyticscongres', {transport: 'beacon', nonInteraction: true});">Digital Analytics Congres in Utrecht</a></h1>
+	   </main>
   </body>
 </html>
