@@ -44,9 +44,11 @@
     </style>
     <script>
       window.ga=function(){ga.q.push(arguments)},ga.q=[],ga.l=+new Date;
-      ga("create","UA-2826482-25","auto",{"sampleRate":100,"siteSpeedSampleRate":100}),ga("set","transport","beacon"),ga("set","anonymizeIp",true),ga("set","displayFeaturesTask",null),ga("set","allowAdFeatures",false),ga("send","pageview");
+      ga("create","UA-2826482-25","auto",{"sampleRate":100,"siteSpeedSampleRate":100}),
+      ga("set",{"transport":"beacon","anonymizeIp":true,"forceSSL":true,"displayFeaturesTask":null,"allowAdFeatures":false,"allowAdPersonalizationSignals":false});
+      ga("send","pageview");
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="https://www.google-analytics.com/analytics.js" importance="high" async></script>
     <meta name="google-site-verification" content="buxekOJH2jXBqPX2A2oZfQfmN22nSznsDNMXmsZwQOY">
     <link rel="canonical" href="https://womeninanalytics.nl/">
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
@@ -65,7 +67,11 @@
   <body>
   	<main>
 	    <a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'image', 'meetup', {transport: 'beacon', nonInteraction: true});">
-	      <img src="women-in-analytics.jpg" alt="Women in Analytics" importance="high" loading="eager">
+        <picture>
+          <source srcset="women-in-analytics.avif" type="image/avif">
+          <source srcset="women-in-analytics.webp" type="image/webp">
+          <img src="women-in-analytics.jpg" alt="Women in Analytics" title="Women in Analytics" attribution="Women in Analytics" importance="high" loading="eager">
+        </picture>
 	    </a>
 	    <h1><a href="https://www.meetup.com/Women-in-Analytics/" title="When is the next Women in Analytics event in Amsterdam" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'link', 'meetup', {transport: 'beacon', nonInteraction: true});">Meetups in Amsterdam</a></h1>
 	    <h1><a href="https://womeninanalytics.nl/slack" title="Slack" rel="noopener" target="_blank" onclick="ga('send', 'event', 'click', 'link', 'slack', {transport: 'beacon', nonInteraction: true});">Join our Slack group</a></h1>
